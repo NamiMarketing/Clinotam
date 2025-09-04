@@ -1,0 +1,28 @@
+@use "./colors" as *;
+@use "./global" as *;
+
+
+.blueButton {
+  background-color: $azul-900;
+  color: $azul-500;
+  padding: 1.8rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: filter 0.2s;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 10;
+  width: fit-content;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding: 1.3rem 1.6rem;
+  }
+}

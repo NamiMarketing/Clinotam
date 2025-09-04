@@ -1,0 +1,111 @@
+@use 'index' as *;
+
+.tratamentos{
+    width: 90%;
+    margin: auto;
+    padding: 12rem 0 17rem;
+    position: relative;
+    max-width: 1500px;
+    .wrap-tratamentos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        align-items: center;
+        margin: auto;
+        .item-tratamentos{
+            position: relative;
+            width: 60rem;
+            height: 54rem;
+            cursor: pointer;
+            >img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .option{
+                position: absolute;
+                z-index: 3;
+                bottom: 4rem;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                flex-direction: column;
+                gap: 2.2rem;
+                img{
+                    height: 8rem;
+                    object-fit: contain;
+                }
+                .blueButton{
+                    width: 20rem;
+                }
+            }
+        }
+    }
+    .tratamentos-dots{
+        position: absolute;
+        right: 0;
+        bottom: 6rem;
+    }
+}
+
+.page{
+    padding: 11rem 0;
+    .wrap-page{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8.5rem;
+    }
+    .right-page{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        .back{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img{
+                width: 3rem;
+                height: 3rem;
+                object-fit: cover;
+            }
+            p{
+                font-size: 2rem;
+                line-height: 1.8rem;
+                letter-spacing: 4%;
+                font-weight: 400;
+            }
+        }
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;   
+            img{
+                height: 7rem;
+                width: auto;
+                object-fit: contain;
+            }
+            h1{
+                font-size: 4rem;
+                line-height: 4.6rem;
+                letter-spacing: 2%;
+                color: $vermelho;
+                text-transform: uppercase;
+                font-family: $fractul;
+                font-weight: 600;
+            }
+        }
+        p{
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+            letter-spacing: 2%;
+            font-weight: 300;
+        }
+    }
+}
+

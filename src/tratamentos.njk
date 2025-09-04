@@ -1,0 +1,74 @@
+---
+title: Clinotam - Odontologia
+layout: "base.njk"
+cssPath: "/css/tratamentos.css"
+---
+
+{% include 'nav2.njk' %}
+
+<header class="header2">
+    <img class="tablet-desktop" src="../img/tratamentos/header.png" alt="Foto da Dra. Mayra posicionada em frente à cadeira odontológica">
+    <img class="only-mobile" src="../img/tratamentos/header-mob.png" alt="Foto da Dra. Mayra posicionada em frente à cadeira odontológica">
+    <div class="header-text">
+        <h2>
+            Tratamentos
+        </h2>
+        <p>Escolha o melhor cuidado odontológico para o seu sorriso.</p>
+    </div>
+</header>  
+
+<section class="tratamentos">
+    <div class="wrap-tratamentos">
+        <a class="item-tratamentos" href="/clinica">
+            <img src="../img/tratamentos/clinica.png" alt="Imagem com a Dra. Mayra em atendimneot">
+            <div class="option">
+                <img src="../img/home/clinica.png"
+                    srcset="../img/home/clinica@2x.png 2x"
+                    alt="Icone de clinica">
+                <p href="/clinica" class="blueButton">Clínica Geral</p>
+            </div>
+        </a>
+        <a class="item-tratamentos" href="/canal">
+            <img src="../img/tratamentos/canal.png" alt="Imagem com a Dra. Mayra em atendimneot">
+            <div class="option">
+                <img src="../img/home/canal.png"
+                    srcset="../img/home/canal@2x.png 2x" 
+                    alt="Icone de canal">
+                <p href="/canal" class="blueButton">Canal</p>
+            </div>
+        </a>
+        <a class="item-tratamentos" href="/restauracao">
+            <img src="../img/tratamentos/restauracao.png" alt="Imagem de um dente sendo olhado pelo espelo intraoral">
+            <div class="option">
+                <img src="../img/home/restauracao.png"
+                    srcset="../img/home/restauracao@2x.png 2x" 
+                    alt="Ícone de restauração">
+                <p href="/restauracao" class="blueButton">Restauração</p>
+            </div>
+        </a>
+        <a class="item-tratamentos" href="/clareamento">
+            <img src="../img/tratamentos/clareamento.png" alt="Imagem de uma placa de clareamento e gel de clareamento">
+            <div class="option">
+                <img src="../img/home/clareamento.png"
+                    srcset="../img/home/clareamento@2x.png 2x" 
+                    alt="Íconde clareamento">
+                <p href="/clareamento" class="blueButton">Clareamento</p>
+            </div>
+        </a>
+        <a class="item-tratamentos" href="/protese">
+            <img src="../img/tratamentos/protese.png" alt="Imagem de um paciente desfocado, olhando para um modelo explicativo com prótese e implante">
+            <div class="option">
+                <img src="../img/home/protese.png"
+                    srcset="../img/home/protese@2x.png 2x" 
+                    alt="Ícone de prótese">
+                <p href="/protese" class="blueButton">Prótese</p>
+            </div>
+        </a>
+    </div>
+    <img src="../img/tratamentos/tratamentos-dots"
+        srcset="../img/tratamentos/tratamentos-dots@2x.png 2x, ../img/tratamentos/tratamentos-dots@3x.png 3x" 
+        alt="Imagem de fundo com círculos"
+        class="tratamentos-dots">
+</section>
+
+{% include 'footer.njk' %}
