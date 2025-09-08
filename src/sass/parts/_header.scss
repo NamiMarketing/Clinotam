@@ -4,10 +4,9 @@
 
 .header{
     position: relative;
-    aspect-ratio: 144/70;
     width: 100%;
-    height: auto;
-    >img{
+    height: 100vh;
+    .header-back{
         position: absolute;
         top: 0;
         left: 0;
@@ -31,12 +30,29 @@
         }
 
     }
+    .down-arrow{
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        width: 8rem;
+        height: 8rem;
+        animation: arrow 1.5s infinite alternate linear;
+    }
     @media screen and (max-width:700px) {
-        aspect-ratio: 36/48;
+        aspect-ratio: 36/40;
+        height: auto;
         .header-text{
             left: 2.4rem;
             gap: 1rem;
-            width: 25rem;
+            width: 17rem;
+            top: 55%;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
             h2{
                 font-size: 1.6rem;
                 line-height: 2.2rem;
@@ -88,16 +104,31 @@
         }
     }
     @media screen and (max-width:700px) {
-        aspect-ratio: 36/48;
+        aspect-ratio: 36/40;
+        height: auto;
         .header-text{
             left: 2.4rem;
-            gap: 1rem;
-            width: 25rem;
+            gap: 1.2rem;
+            width: 27rem;
             h2{
-                font-size: 2.2rem;
+                font-size: 2.6rem;
                 line-height: 2.2rem;
-                width: 25rem;
+                width: 20rem;
+            }
+            p{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
             }
         }
+    }
+}
+
+@keyframes arrow{
+    from {
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(2rem);
     }
 }

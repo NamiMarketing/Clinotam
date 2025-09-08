@@ -7,14 +7,20 @@ cssPath: "/css/home.css"
 {% include 'nav.njk' %}
 
 <header class="header">
-    <img class="tablet-desktop" src="../img/home/header.png" alt="Foto com a equipe da Clinotam olhando uma radiografia panorâmica">
-    <img class="only-mobile" src="../img/home/header-mob.png" alt="Foto com a equipe da Clinotam olhando uma radiografia panorâmica">
+    <img class="tablet-desktop header-back" src="../img/home/header.png" alt="Foto com a equipe da Clinotam olhando uma radiografia panorâmica">
+    <img class="only-mobile header-back" src="../img/home/header-mob.png" alt="Foto com a equipe da Clinotam olhando uma radiografia panorâmica">
     <div class="header-text">
        <img 
             src="../img/home/header-logo.png"
             srcset="../img/home/header-logo@2x.png 2x"
             alt="logo Clinotam Odontologia">
     </div>
+    <img 
+        src="../img/icons/down.pgn"
+        srcset="../img/icons/down@2x.png 2x"
+        alt="flecha para descer"
+        class="down-arrow only-desktop"
+    >
 </header>
 
 <section class="cuidando">
@@ -23,9 +29,10 @@ cssPath: "/css/home.css"
         alt="imagem de fundo com um semi círculo vermelho" 
         class="red-dot">
     <div class="wrap-cuidando">
-        <img src="../img/home/team.png" alt="Foto da Equipe da Clinotam">
+        <img class="only-desktop" src="../img/home/team.png" alt="Foto da Equipe da Clinotam">
         <div class="right-cuidando">
             <h1>Há 36 anos cuidando dos sorrisos curitibanos.</h1>
+            <img class="only-mobile" src="../img/home/team.png" alt="Foto da Equipe da Clinotam">
             <p>
                 A Clinotam Odontologia é um negócio familiar que manteve a tradição na odontologia e hoje passa o bastão para a segunda geração, comandada pela Dra. Mayra Megumi. <br/><br/>
                 Com os mesmos valores e o propósito de acolher todos os pacientes, continuamos cuidando da saúde e do sorriso de todos os pacientes.
@@ -79,10 +86,11 @@ cssPath: "/css/home.css"
                 alt="Ícone para prótese">
             <p>Prótese</p>
         </a>
-        <div class="item-tratamentos">
+        <div class="outro-tratamentos only-desktop">
             <a href="/tratamentos" class="blueButton">Saiba mais</a>
         </div>
     </div>
+    <a href="/tratamentos" class="blueButton only-mobile">Saiba mais</a>
 </section>
 
 <section class="equipe">
@@ -164,7 +172,7 @@ cssPath: "/css/home.css"
     <img 
         src="../img/home/cuidar-dots.png"
         srcset="../img/home/cuidar-dots@2x.png 2x, ../img/home/cuidar-dots@3x.png 3x"
-        class="cuidar-dots"
+        class="cuidar-dots only-desktop"
         alt="Bolinhas de detalhe de fundo">
 </section>
 

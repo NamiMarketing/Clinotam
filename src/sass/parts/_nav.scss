@@ -47,11 +47,21 @@
   }
 
   @media screen and (max-width: 700px) {
-    padding-right: 2.44rem;
-    position: inherit;
-    padding-bottom: 2.3rem;
-    padding-top: 2.3rem;
-
+    padding: 2rem 2.4rem;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    
+    >a{
+      img{
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+    label{
+      width: auto;
+    }
     label .menu {
       position: relative;
       z-index: 1000;
@@ -60,11 +70,8 @@
 
     .hamburger{
       .abrir{
-        color: $azul-500;
-        text-transform: uppercase;
-        font-weight: 500;
-        letter-spacing: 2%;
-        font-size: 1.4rem;
+       width: 4rem;
+       height: 4rem;
       }
       .fechar{
         display: none;
@@ -112,6 +119,11 @@
       height: 70vh;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
       z-index: 200;
+      .wrap-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .links{
         font-size: 1.8rem;
         line-height: 1.8rem;
@@ -120,14 +132,15 @@
         text-transform: none;
       }
       img{
-        width: 4.1rem;
-        height: 3.8rem;
+        width: 4rem;
+        height: 4rem;
         margin-bottom: 13vh;
       }
       .blueButton{
         margin-top: 12vh;
+        border: 1px solid $azul-300;
       }
-      li:last-of-type{
+      >li{
         align-self: center;
       }
     }
@@ -305,12 +318,22 @@
     }
   }
 
-  @media screen and (max-width: 700px) {
-    padding-right: 2.44rem;
-    position: inherit;
-    padding-bottom: 2.3rem;
-    padding-top: 2.3rem;
-
+   @media screen and (max-width: 700px) {
+    padding: 2rem 2.4rem;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    
+    >a{
+      img{
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+    label{
+      width: auto;
+    }
     label .menu {
       position: relative;
       z-index: 1000;
@@ -319,11 +342,8 @@
 
     .hamburger{
       .abrir{
-        color: $azul-500;
-        text-transform: uppercase;
-        font-weight: 500;
-        letter-spacing: 2%;
-        font-size: 1.4rem;
+       width: 4rem;
+       height: 4rem;
       }
       .fechar{
         display: none;
@@ -371,6 +391,11 @@
       height: 70vh;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
       z-index: 200;
+      .wrap-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .links{
         font-size: 1.8rem;
         line-height: 1.8rem;
@@ -379,14 +404,15 @@
         text-transform: none;
       }
       img{
-        width: 4.1rem;
-        height: 3.8rem;
+        width: 4rem;
+        height: 4rem;
         margin-bottom: 13vh;
       }
       .blueButton{
         margin-top: 12vh;
+        border: 1px solid $azul-300;
       }
-      li:last-of-type{
+      >li{
         align-self: center;
       }
     }
