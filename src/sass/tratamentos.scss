@@ -49,6 +49,38 @@
         right: 0;
         bottom: 6rem;
     }
+    @media screen and (max-width:700px){
+        width: 85%;
+        margin: auto;
+        padding: 4.5rem 0 7.6rem;
+        position: relative;
+        max-width: 100%;
+        .wrap-tratamentos{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .item-tratamentos{
+                aspect-ratio: 32/28;
+                width: 100%;
+                height: auto;
+                .option{
+                    bottom: 2rem;
+                    gap: 1rem;
+                    img{
+                        height: 6rem;
+                    }
+                    .blueButton{
+                        width: 14.5rem;
+                    }
+                }
+            }
+        }
+        .tratamentos-dots{
+            position: absolute;
+            right: 0;
+            bottom: 6rem;
+        }
+    }
 }
 
 .page{
@@ -105,6 +137,54 @@
             line-height: 3.2rem;
             letter-spacing: 2%;
             font-weight: 300;
+        }
+    }
+    @media screen and (max-width:700px){
+        padding: 5rem 0;
+        .wrap-page{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+        }
+        .right-page{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            width: 100%;
+            .back{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                    object-fit: cover;
+                }
+                p{
+                    font-size: 1.3rem;
+                    line-height: 1.3rem;
+                }
+            }
+            .title{
+                display: flex;
+                align-items: center;
+                gap: 1rem;   
+                img{
+                    height: 4rem;
+                    width: auto;
+                    object-fit: contain;
+                }
+                h1{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    letter-spacing: 2%;
+                }
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                letter-spacing: 0%;
+            }
         }
     }
 }
