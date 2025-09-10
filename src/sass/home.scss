@@ -250,7 +250,7 @@
             margin-bottom: 4rem;
         }
     }
-    @media screen {
+    @media screen and (max-width:700px){
         padding-bottom: 0rem;
         .wrap-equipe{
             display: flex;
