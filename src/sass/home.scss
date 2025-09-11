@@ -139,7 +139,7 @@
         margin: auto;
         gap: 2.4rem;
         align-items: flex-start;
-        padding-bottom: 6rem;
+        padding-bottom: 17rem;
         .left-tratamentos{
             gap: 2.2rem;
             h1{
@@ -251,17 +251,17 @@
         }
     }
     @media screen and (max-width:700px){
-        padding-bottom: 0rem;
+        padding: 17rem 0rem 6rem;
         .wrap-equipe{
             display: flex;
             flex-direction: column;
             width: 85%;
-            margin: 0rem auto 0;
+            margin: -35rem auto 0;
             padding-top: 7rem;
             gap: 6rem;
             .item-equipe{
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
                 gap: 3rem;
                 align-items: center;
                 img{
@@ -290,7 +290,7 @@
                 }
             }
             .invert{
-                flex-direction: column;
+                flex-direction: column-reverse;
                 justify-content: flex-start;
             }
             .end{
@@ -387,10 +387,7 @@
         bottom: 16rem;
     }
     @media screen and (max-width: 700px) {
-        margin-top: -12rem;
-        z-index: 5;
-        background-color: $background;
-        padding: 16rem 0 8rem;
+        padding: 6rem 0;
         align-items: center;
         position: relative;
         .wrap-cuidar{
@@ -399,26 +396,26 @@
             width: 90%;
             margin: auto;
             justify-content: center;
-            gap: 5rem;
-            margin-bottom: 5rem;
+            gap: 3rem;
+            margin-bottom: 0rem;
             h1{
-                font-size: 3.4rem;
-                line-height: 3.4rem;
+                font-size: 2rem;
+                line-height: 2rem;
                 letter-spacing: 2%;
                 color: $vermelho;
                 text-transform: uppercase;
                 font-weight: 600;
-                width: 44rem;
+                width: 100%;
             }
             .aspas{
-                width: 33.5px;
-                height: 20.5px;
+                width: 24px;
+                height: 13px;
             }
             .cuidar-right{
                 width: 50%;
-                padding-top: 13rem;
+                padding-top: 8rem;
                 display: flex;
-                gap: 5rem;
+                gap: 0rem;
                 position: relative;
                 .aspas{
                     margin-top: -2rem;
@@ -428,15 +425,15 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        height: 24rem !important;
+                        height: 20rem !important;
                         p{
-                            font-size: 2.2rem;
-                            line-height: 3.2rem;
+                            font-size: 1.6rem;
+                            line-height: 2.2rem;
                             letter-spacing: 2%;
                         }
                         h2{
-                            font-size: 2.2rem;
-                            line-height: 2.2rem;
+                            font-size: 1.5rem;
+                            line-height: 1.5rem;
                             text-transform: uppercase;
                             color: $azul-900;
                             letter-spacing: 2%;
@@ -460,18 +457,14 @@
             }
         }
         >p{
-            font-size: 2.6rem;
-            line-height: 3.2rem;
-            letter-spacing: 2%;
-            text-align: center;
-            font-weight: 500;
-            font-family: $fractul;
-            margin-bottom: 5rem;
+            font-size: 1.7rem;
+            line-height: 2.3rem;
+            margin-bottom: 2.5rem;
         }
         .cuidar-dots{
             position: absolute;
             left: 0;
-            bottom: 16rem;
+            bottom: 0rem;
         }
     }
 }
