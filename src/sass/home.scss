@@ -412,8 +412,8 @@
                 height: 13px;
             }
             .cuidar-right{
-                width: 50%;
-                padding-top: 8rem;
+                width: 100%;
+                padding-top: 7.6rem;
                 display: flex;
                 gap: 0rem;
                 position: relative;
@@ -425,7 +425,8 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        height: 20rem !important;
+                        height: 17rem !important;
+                        z-index: 4;
                         p{
                             font-size: 1.6rem;
                             line-height: 2.2rem;
@@ -445,13 +446,13 @@
                     position: absolute;
                     display: flex;
                     align-items: center;
-                    top: 8rem;
+                    top: 3rem;
                     right: 0;
-                    gap: 1.5rem;
+                    gap: 1rem;
                     img{
                         position: unset;
-                        width: 4.2rem;
-                        height: 4.2rem;
+                        width: 3rem;
+                        height: 3rem;
                     }
                 }
             }
@@ -460,11 +461,17 @@
             font-size: 1.7rem;
             line-height: 2.3rem;
             margin-bottom: 2.5rem;
+            margin-top: 6rem;
+            width: 90%;
+            margin: 6rem auto 2.5rem;
         }
         .cuidar-dots{
             position: absolute;
             left: 0;
-            bottom: 0rem;
+            bottom: unset;
+            top: 14rem;
+            height: 25rem;
+            z-index: 0;
         }
     }
 }
